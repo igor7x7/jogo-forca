@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    padding: 1rem;
+    font-size: 32px;
+    border: solid 2px black;
+    border-radius: 5px;
+    background-color: rgb(219, 219, 219);
+    font-family: monospace;
+   
+}
+
+button{
+    margin-left: 20px;
+    padding: 1rem;
+    font-size: 32px;
+    border-radius: 5px;
+    border: solid 2px black;
+    background-color:black;
+    color: white;
+    font-family: monospace;
+    transition: 200ms;
+}
+
+footer button{
+    border-radius: 50px;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}

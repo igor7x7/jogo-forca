@@ -1,0 +1,23 @@
+body{
+    background-image: linear-gradient(rgb(99, 99, 99), white)
+}
+section{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+
+div{
+    border-bottom: solid 10px black;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 8%;
+    height: 4rem;
+    margin: 0 0 0 2%;
+    font-size: 5rem;
+}
+
+
