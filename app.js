@@ -1,4 +1,4 @@
-import { novaPlavra } from "./app-add-palavra"
+import Npalavra from './add-palavra.js'
 
 const section = document.querySelector('section')
 const teste = document.getElementById('teste')
@@ -6,8 +6,8 @@ const criar = document.getElementById('criar')
 const letra = document.getElementById('letra')
 const msg = document.getElementById('msg')
 
+let palavra = 'rato'
 
-novaPlavra()
 palavra = palavra.split('')
 
 let valor = false
