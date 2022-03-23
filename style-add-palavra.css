@@ -40,3 +40,14 @@ button:hover{
     background-color: white;
     color: black;
 }
+
+@media only screen and (max-width: 420px){
+    section{
+        flex-direction: column;
+    }
+
+    input{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
