@@ -15,7 +15,6 @@ body{
 .letras-display{
     margin-top: 10%;
     display: flex;
-    border: solid 1px black;
     justify-content: center;
     align-items: flex-end;
     height: 50%;
@@ -78,4 +77,14 @@ span{
     position: fixed;
 }
 
+@media only screen and (max-width: 420px) {
+    div{
+        border-bottom: solid 5px black;
+        font-size: 2rem;
+    }   
+    
+    .letras-display{
+        width: 90%;
+    }
+}
 
