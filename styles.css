@@ -1,11 +1,63 @@
-body{
-    background-image: linear-gradient(rgb(99, 99, 99), white)
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-section{
-    height: 70vh;
+
+body{
+    height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
-    align-items:flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+.letras-display{
+    margin-top: 10%;
+    display: flex;
+    border: solid 1px black;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50%;
+    width: 50vw;
+}
+
+.controles{
+    display: flex;
+    width: 100vw;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button{
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0 0 0;
+    border: solid 1px black;
+    transition: 200ms;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+input{
+    margin-top: 20px;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: solid 1px black;
+    font-family: monospace;
+    font-size: 16px;
+    text-align: center;
+}
+
+.botoes{
+    margin-top: 25px;
 }
 
 div{
@@ -18,6 +70,12 @@ div{
     height: 4rem;
     margin: 0 0 0 2%;
     font-size: 5rem;
+}
+
+span{
+    font-size: 40px;
+    font-family: monospace;
+    position: fixed;
 }
 
 
