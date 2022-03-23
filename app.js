@@ -1,14 +1,20 @@
-import Npalavra from './add-palavra.js'
-
 const section = document.querySelector('section')
 const teste = document.getElementById('teste')
 const criar = document.getElementById('criar')
 const letra = document.getElementById('letra')
 const msg = document.getElementById('msg')
 
-let palavra = 'rato'
+let palavra = localStorage.getItem('arraydepalavras')
 
-palavra = palavra.split('')
+palavra = JSON.parse(palavra)
+
+let palavraSort = palavra[Math.floor(Math.random() * palavra.length)]
+
+console.log(palavraSort)
+
+palavraSort = palavraSort.split('')
+
+console.log(palavraSort)
 
 let valor = false
 let cont = false
@@ -16,7 +22,7 @@ let cont2 = 0
 
 
 criar.addEventListener('click', () => {
-    palavra.forEach(() => {
+    palavraSort.forEach(() => {
         section.innerHTML += '<div></div>'
     })
 })
@@ -28,7 +34,7 @@ teste.addEventListener('click', () => {
 
     divs.forEach(div => {
         //Preenche a div com a letra descoberta
-        if (letra.value == palavra[i]) {
+        if (letra.value == palavraSort[i]) {
             div.innerText = letra.value.toUpperCase()
             cont = true
         }
