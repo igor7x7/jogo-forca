@@ -8,6 +8,7 @@ var addPalavra = function () {
         console.log('erro')
     } else {
         nPalavra.push(novaPalavra?.value)
+        novaPalavra.value = ''
     }
     console.log(nPalavra)
     localStorage.setItem('arraydepalavras', JSON.stringify(nPalavra))
