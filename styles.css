@@ -12,22 +12,16 @@ body{
     align-items: center;
     flex-direction: column;
 }
+img{
+    width: 300px;
+}
 .letras-display{
     margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 50%;
+    height: 10%;
     width: 50vw;
-}
-
-.controles{
-    display: flex;
-    width: 100vw;
-    height: 20%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 button{
@@ -44,19 +38,8 @@ button:hover{
     color: white;
 }
 
-input{
-    margin-top: 20px;
-    height: 40px;
-    width: 100px;
-    border-radius: 5px;
-    border: solid 1px black;
-    font-family: monospace;
-    font-size: 16px;
-    text-align: center;
-}
-
 .botoes{
-    margin-top: 25px;
+    margin-top: 40px;
 }
 
 div{
@@ -71,10 +54,18 @@ div{
     font-size: 5rem;
 }
 
-span{
+.resultado{
+    margin-bottom: 40px;
     font-size: 40px;
     font-family: monospace;
-    position: fixed;
+}
+
+.erros{
+    margin-top: 40px;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: monospace;
 }
 
 @media only screen and (max-width: 420px) {

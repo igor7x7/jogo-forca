@@ -1,7 +1,7 @@
 const novaPalavra = document.getElementById('nova-palavra')
 const button = document.getElementById('add-palavra')
 
-let nPalavra = ['gato', 'cachoro', 'cavalo', 'rinoceronte', 'camelo', 'tartaruga']
+let nPalavra = ['gato', 'cachorro', 'cavalo', 'rinoceronte', 'camelo', 'tartaruga']
 
 localStorage.setItem('arraydepalavras', JSON.stringify(nPalavra))
 
